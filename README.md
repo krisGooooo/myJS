@@ -7,3 +7,6 @@
 
 * myCallApplyBind 我的手写call apply bind函数
 > v1.0 按照三种函数的意义实现（ES5）
+
+* myNewInstanceof 我的手写new instanceof函数
+> v1.0 基本实现new 和instanceof的逻辑
