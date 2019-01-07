@@ -17,3 +17,6 @@
 > geneticAlgorithm: 遗传算法 GA 解决简单的负载均衡问题(eCharts展示)
 
 > neturalNetwork: 基于 synaptic 的神经网络 学习xor
+
+* myCrossDomain 我的关于跨域的demo实现
+> my_jsonp: 封装的一个简单jsonp的实现
