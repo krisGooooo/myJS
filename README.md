@@ -20,3 +20,6 @@
 
 * myCrossDomain 我的关于跨域的demo实现
 > my_jsonp: 封装的一个简单jsonp的实现
+
+* myCache 我的关于缓存的实现
+> my_serviceWorker: 一个service worker 缓存demo
