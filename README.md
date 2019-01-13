@@ -23,3 +23,6 @@
 
 * myCache 我的关于缓存的实现
 > my_serviceWorker: 一个service worker 缓存demo
+
+* myPackTool 我的基于 Babel 的一个 mini pack 打包工具
+> v1.0 引入需要的分析转译工具 实现生成 AST ES5 的工具函数
