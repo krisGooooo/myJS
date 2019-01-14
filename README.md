@@ -26,3 +26,5 @@
 
 * myPackTool 我的基于 Babel 的一个 mini pack 打包工具
 > v1.0 引入需要的分析转译工具 实现生成 AST ES5 的工具函数
+
+> v1.1 实现分析依赖，识别JS/CSS的函数 & 实现打包的函数
