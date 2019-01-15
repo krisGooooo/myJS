@@ -6,7 +6,7 @@
  * 1. 将 ES6 转为 ES5 
  * @Date: 2019-01-13 21:47:53
  * @LastEditors: krisGooooo
- * @LastEditTime: 2019-01-14 22:54:24
+ * @LastEditTime: 2019-01-15 21:28:53
  */
 const fs = require('fs')
 const path = require('path')
@@ -120,3 +120,32 @@ function bundle(dependencies, entry) {
   //  当生成的内容写入到文件中
   fs.writeFileSync('./bundle.js', result)
 }
+
+
+/**
+ * 打包后的一个小 demo
+ ;(function(modules) {
+  function require(id) {
+    // 构造一个 CommonJS 导出代码
+    const module = { exports: {} }
+    // 去参数中获取文件对应的函数并执行
+    modules[id](module, module.exports, require)
+    return module.exports
+  }
+  require('./entry.js')
+})({
+  './entry.js': function(module, exports, require) {
+    // 这里继续通过构造的 require 去找到 a.js 文件对应的函数
+    var _a = require('./a.js')
+    console.log(_a2.default)
+  },
+  './a.js': function(module, exports, require) {
+    var a = 1
+    // 将 require 函数中的变量 module 变成了这样的结构
+    // module.exports = 1
+    // 这样就能在外部取到导出的内容了
+    exports.default = a
+  }
+  // 省略
+})
+ */
