@@ -28,3 +28,6 @@
 > v1.0 引入需要的分析转译工具 实现生成 AST ES5 的工具函数
 
 > v1.1 实现分析依赖，识别JS/CSS的函数 & 实现打包的函数
+
+* myUrlAnalysis 我的基于puppeteer的一个nodejs url 分析器，通过后台开一个mini chrome 模拟进入url 并获取一些过程中的重要信息 如 资源数 性能数据 请求数 dom数等相关数据 
+> v1.0 基本实现采集功能，并加入redis做缓存优化
